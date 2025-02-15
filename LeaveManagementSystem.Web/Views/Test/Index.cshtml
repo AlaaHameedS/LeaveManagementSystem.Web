@@ -1,0 +1,14 @@
+﻿@model LeaveManagementSystem.Web.Models.TestViewModel
+
+@{
+    ViewData["Title"] = "Test View";
+}
+
+<h1>Hello from Test Controller</h1>
+
+<h2>Your name is @Model.Name</h2>
+
+@if (Model.DateOfBirth.HasValue)
+{
+    <h2>Your Date of Birth is @Model.DateOfBirth.Value.ToString("yyyy-MM-dd")</h2>
+}
